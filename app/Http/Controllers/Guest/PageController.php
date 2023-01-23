@@ -15,8 +15,8 @@ class PageController extends Controller
         // recuperate tutti i film dal database e passateli alla view:
         $movies= Movie::all();
         
-        // dd($movies);
+        // var_dump($movies);
         // compact('movies')
-        return view('index');
+        return view('index',compact('movies'));
     }
 };
