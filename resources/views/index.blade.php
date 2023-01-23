@@ -9,14 +9,14 @@
     @vite('resources/js/app.js')
 </head>
 
-<body>  
-    <h1>Movies List</h1>
+<body class="container py-5">  
+    <h1 class="text-center py-5">Movies List</h1>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-6 g-4">
         @foreach ($movies as $movie)
             <div class="col">
                 <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
+                    <img src="https://picsum.photos/200" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Title: {{$movie->title}}</h5>
                         <h6> Origginal Title: {{$movie->original_title}}</h6>
